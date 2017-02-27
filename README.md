@@ -7,7 +7,7 @@ Developer Information
 
 To launch this service locally via command line run `mvn spring-boot:run`, then connect to `localhost:9010`
 
-To modify / add new configuration profiles add them to the `ssp-configuration-repo` under service as `homes-ms-retail.yml`
+To modify / add new configuration profiles add them to the `ssp-configuration-repo` under service as `retail.yml`
 
 
 **Docker**
@@ -17,13 +17,13 @@ This is tailored around our typical development machines (Windows and Mac) using
 
 **Building a local DEV image**
 - Build: `./mvn clean package docker:build`
-- Run: `docker run -p 9010:9010 registry.prod.auction.local:5000/homes-ms-retail:DEV`
+- Run: `docker run -p 9010:9010 registry.prod.auction.local:5000/ssp-ms-retail:DEV`
 
 **Using the CI official built image**
 
 To use an image built by our CI system the command is nearly identical but without the `:DEV` tag at the end
 
-- Run: `docker run -p 9010:9010 registry.prod.auction.local:5000/homes-ms-retail`
+- Run: `docker run -p 9010:9010 registry.prod.auction.local:5000/ssp-ms-retail`
 
 Technologies:
 ----
